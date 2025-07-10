@@ -4,8 +4,8 @@ max-width: 100%
 }
 html{
     font-family: charter, Cambria, serif;
-    font-size: 19.5px;
-    line-height: 1.45;
+    font-size: 18px;
+    line-height: 1.35;
     text-align: left;
     display: inline;
     position: static;
@@ -21,16 +21,45 @@ body{
     flex-wrap: wrap;
     height: 100%;
 }
-h2, h3, h4, h5, h6{
-    font-size: 19px;
+
+@font-face {
+    font-family: adelphe-trouble;
+    src: url(Adelphe-Trouble-FlorealRegular.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: adelphe-trouble;
+    src: url(Adelphe-Trouble-FlorealItalic.woff2);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: adelphe-trouble;
+    src: url(Adelphe-Trouble-FlorealBold.woff2);
     font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: adelphe-trouble;
+    src: url(Adelphe-Trouble-FlorealBoldItalic.woff2);
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2, h3, h4, h5, h6{
+    font-size: 18px;
+    font-weight: normal;
     margin-top: 24px;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
+    font-family: adelphe-trouble;
 }
 h1{
-    margin-top: 28px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 6px;
     font-size: 35px;
+    line-height: 1;
+    font-family: adelphe-trouble;
 }
 pre{
     margin-top: 50px;
@@ -42,13 +71,34 @@ code{
     margin-bottom: 30px;
     font-size: 10px;
 }
-hr{
-    width: 100%;
+hr {
+    border: none;
+    border-top: 3px #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+article hr {
+    border: none;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 0px;
+}
+article hr::after {
+    background: #fff;
+    content: "▢ ▢ ▢ ▢ ▢";
+    padding: 0 4px;
+    position: relative;
+    top: -15px;
 }
 
 nav{
     margin: 10px 0 0px 0;
     width: 100;
+    font-family: adelphe-trouble;
 }
 nav ul{
     padding: 0;
@@ -66,6 +116,8 @@ nav{
     a{
         display: block;
         text-align: center;
+        font-style: normal;
+        color: black;
     }
     li:not(:first-child){
         padding-left: 20px;
@@ -76,14 +128,65 @@ nav{
 a{
     font-style: italic;
     text-decoration: none;
-    color: #444499;
+    color: black;
 }
 a:hover{
-    color: #aadd99;
+    color: #aa0000;
 }
 a:active{
     color: #FFcccc;
 }
+p > a {
+    font-family: adelphe-trouble;
+}
+
 p > a:after{
     content: "°";
+}
+
+h2 + p {
+    margin-top:0px;
+}
+h1 + p {
+    margin-top:0px;
+}
+p {
+    margin-top:0px;
+}
+
+ul, ol {
+    margin-top:0px;
+    padding-left: 15px;
+}
+ul {
+    list-style-type: circle;
+}
+
+.headline {
+    font-size: 65px;
+    margin-bottom: 0px;
+}
+.subtitle {
+    font-size: 35px;
+    margin-top:10px;
+    font-style: normal;
+    line-height: 1.1;
+    width: 80%;
+    font-family: adelphe-trouble;
+}
+.subheadline {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: adelphe-trouble;
+
+}
+
+.subtitle em {
+
+}
+
+.wistful {
+    font-family: adelphe-trouble;
+    font-size: 20px;
 }
