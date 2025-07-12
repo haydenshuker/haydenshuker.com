@@ -41,7 +41,7 @@
     flex-grow: 2;
     align-items: end;
     text-align: right;
-    flex-basis: 7em;
+    flex-basis: 15em;
 }
 .center-box{
     flex-basis: 30em;
@@ -66,6 +66,7 @@
     font-style: normal;
     line-height: 1.1;
     font-family: adelphe-trouble;
+    text-wrap: balance;
 }
 .subheadline {
     font-size: 25px;
@@ -73,12 +74,14 @@
     font-weight: normal;
     font-family: adelphe-trouble;
 }
+
 .subtitle em {
 }
 .wistful {
     font-family: adelphe-trouble;
     font-size: 20px;
 }
+
 .pixelated{
     image-rendering: pixelated;
     max-width: 200px;
@@ -195,6 +198,11 @@ a:hover{
 a:active{
     color: #FFcccc;
 }
+p{
+    margin-top:0px;
+    text-wrap: pretty;
+    text-align: left;
+}
 p > a {
     font-family: adelphe-trouble;
 }
@@ -207,9 +215,6 @@ h2 + p {
 h1 + p {
     margin-top:0px;
 }
-p {
-    margin-top:0px;
-}
 ul, ol {
     margin-top:0px;
     padding-left: 15px;
@@ -219,6 +224,19 @@ ul {
 }
 img{
     width:100%;
+}
+
+.flavor-text {
+    hyphens: auto;
+    text-justify: inter-word;
+    text-indent: yes;
+}
+.flavor-text p {
+    margin: 0;
+    text-align: justify;
+}
+.flavor-text p + p {
+    text-indent: 1em;
 }
 
 @media(max-width: 600px) {
