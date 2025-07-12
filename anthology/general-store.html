@@ -1,0 +1,71 @@
+<head>
+<base href = "../">
+<style>
+    html{
+    background: black;
+    color: white;
+    flex-direction: row;
+    }
+    body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    }
+    img {
+    display: block;
+    margin-left:auto;
+
+    }
+    .leftbox {
+    display: flex;
+    justify-content: flex-end;
+    border-color: white;
+    border: 2px solid white;
+    flex: 1 1 auto;
+    justify-content: end;
+    margin: 10px;
+    }
+    .box {
+    border: 2px solid white;
+    flex: 1 1 auto;
+    }
+    .main {
+    border-color: white;
+    border: 2px solid white;
+    width: 600px;
+    }
+    @media(max-width: 800px) {
+        .box{
+            display: none;
+        }
+        .leftbox{
+            display: none;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="leftbox">
+<img src="images/kijetesantakalu-pfp.png" alt="">
+<p>left box prolonged paragraph text text text text lalalalalalalalalal</p>
+</div>
+
+<div class="main">
+<p>You'll see we have the finest wares!</p>
+<p>Come again</p>
+</div>
+<div class="box">
+<p>snacks:</p>
+<ul>
+<li>chips</li>
+<li>chips</li>
+<li>chips</li>
+<li>chips</li>
+<li>chips</li>
+</ul>
+</div>
+
+</body>

@@ -1,27 +1,5 @@
 *{
-box-sizing: border-box;
-max-width: 100%
 }
-html{
-    font-family: charter, Cambria, serif;
-    font-size: 18px;
-    line-height: 1.35;
-    text-align: left;
-    display: inline;
-    position: static;
-    max-width: 100%;
-    margin: 0;
-}
-body{
-    max-width: 530px;
-    margin: auto;
-    padding: 0px 12px 0px 12px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100%;
-}
-
 @font-face {
     font-family: adelphe-trouble;
     src: url(Adelphe-Trouble-FlorealRegular.woff2);
@@ -46,19 +24,111 @@ body{
     font-weight: bold;
     font-style: italic;
 }
-
-h2, h3, h4, h5, h6{
-    font-size: 18px;
-    font-weight: normal;
-    margin-top: 24px;
+.left-margin, .right-margin{
+    flex-shrink: 3;
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+.left-box, .right-box{
+    flex-basis: 0px;
+}
+.left-box{
+    display: flex;
+    margin-right: 1.5em;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-shrink: 2;
+    flex-grow: 2;
+    align-items: end;
+    text-align: right;
+}
+.center-box{
+    flex-basis: 30em;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+.right-box{
+    flex-shrink: 2;
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+.headline {
+    font-size: 65px;
     margin-bottom: 0px;
+}
+.subtitle {
+    font-size: 35px;
+    margin-top:10px;
+    font-style: normal;
+    line-height: 1.1;
     font-family: adelphe-trouble;
 }
+.subheadline {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: adelphe-trouble;
+}
+.subtitle em {
+}
+.wistful {
+    font-family: adelphe-trouble;
+    font-size: 20px;
+}
+.pixelated{
+    image-rendering: pixelated;
+    max-width: 200px;
+}
+html{
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: 100vh;
+    height:100%;
+    font-family: charter, Cambria, serif;
+    font-size: 20px;
+    line-height: 1.35;
+    text-align: left;
+    position: static;
+    margin: 0;
+}
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    flex-grow: 1;
+
+}
+footer{
+    width: 100%;
+    align-items: flex-start;
+}
+
 h1{
     margin-top: 20px;
     margin-bottom: 6px;
     font-size: 35px;
     line-height: 1;
+    font-family: adelphe-trouble;
+}
+h2, h3, h4, h5, h6{
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 24px;
+    margin-bottom: 0px;
     font-family: adelphe-trouble;
 }
 pre{
@@ -72,33 +142,39 @@ code{
     font-size: 10px;
 }
 hr {
-    border: none;
-    border-top: 3px #333;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
-}
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 1em 0.25em;
+    padding: 0;
 
-article hr {
-    border: none;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 0px;
 }
-article hr::after {
-    background: #fff;
-    content: "▢ ▢ ▢ ▢ ▢";
-    padding: 0 4px;
-    position: relative;
-    top: -15px;
+article hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0.5em;
+    padding: 0;
 }
 
 nav{
     margin: 10px 0 0px 0;
-    width: 100;
     font-family: adelphe-trouble;
+    display:block;
+    li{
+        float: left;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    a{
+        display: block;
+        text-align: center;
+        font-style: normal;
+        color: black;
+    }
 }
 nav ul{
     padding: 0;
@@ -107,24 +183,6 @@ nav ul{
 nav li {
     margin: 0 0 0.1em 0;
 }
-
-
-nav{
-    li{
-        float: left;
-    }
-    a{
-        display: block;
-        text-align: center;
-        font-style: normal;
-        color: black;
-    }
-    li:not(:first-child){
-        padding-left: 20px;
-    }
-}
-
-
 a{
     font-style: italic;
     text-decoration: none;
@@ -139,11 +197,9 @@ a:active{
 p > a {
     font-family: adelphe-trouble;
 }
-
 p > a:after{
     content: "°";
 }
-
 h2 + p {
     margin-top:0px;
 }
@@ -153,7 +209,6 @@ h1 + p {
 p {
     margin-top:0px;
 }
-
 ul, ol {
     margin-top:0px;
     padding-left: 15px;
@@ -161,32 +216,23 @@ ul, ol {
 ul {
     list-style-type: circle;
 }
-
-.headline {
-    font-size: 65px;
-    margin-bottom: 0px;
-}
-.subtitle {
-    font-size: 35px;
-    margin-top:10px;
-    font-style: normal;
-    line-height: 1.1;
-    width: 80%;
-    font-family: adelphe-trouble;
-}
-.subheadline {
-    font-size: 25px;
-    font-style: normal;
-    font-weight: normal;
-    font-family: adelphe-trouble;
-
+img{
+    width:100%;
 }
 
-.subtitle em {
-
-}
-
-.wistful {
-    font-family: adelphe-trouble;
-    font-size: 20px;
+@media(max-width: 600px) {
+    main{
+        flex-direction: column;
+    }
+    .left-box, .right-box{
+        flex-shrink: 1;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .left-margin, .right-margin{
+        flex-basis: 0px;
+    }
+    .mobile-hide{
+        display: none;
+    }
 }
