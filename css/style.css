@@ -41,6 +41,7 @@
     flex-grow: 2;
     align-items: end;
     text-align: right;
+    flex-basis: 7em;
 }
 .center-box{
     flex-basis: 30em;
