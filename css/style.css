@@ -1,3 +1,6 @@
+:root {
+    color-scheme: light dark;
+}
 @font-face {
 font-family: adelphe-trouble;
 src: url(Adelphe-Trouble-FlorealRegular.woff2);
@@ -31,7 +34,6 @@ justify-content: flex-end;
 flex-direction: column;
 align-items: end;
 text-align: right;
-
 margin-right: 1.5em;
 flex: 1 1 20em;
 }
@@ -39,7 +41,6 @@ flex: 1 1 20em;
 display: flex;
 flex-direction: column;
 max-width: 100%;
-
 flex: 1 0.5 30em;
 }
 .right-box{
@@ -85,8 +86,7 @@ max-width: 200px;
 }
 .equal-columns{
     flex: 1 1 15em;
-},
-
+}
 html{
 box-sizing: border-box;
 max-width: 100%;
@@ -98,6 +98,8 @@ line-height: 1.35;
 text-align: left;
 position: static;
 margin: 0;
+background-color: light-dark(white, #222);
+color: light-dark(black, white);
 }
 body{
 min-height: 100%;
@@ -150,8 +152,8 @@ hr {
 display: block;
 height: 3px;
 border: 0;
-border-top: 1px solid #ccc;
-border-bottom: 1px solid #ccc;
+border-top: 1px solid currentcolor;
+border-bottom: 1px solid currentcolor;
 margin: 1em 0.25em;
 padding: 0;
 }
@@ -159,7 +161,7 @@ article hr {
 display: block;
 height: 1px;
 border: 0;
-border-top: 1px solid #ccc;
+border-top: 1px solid currentcolor;
 margin: 1em 0.5em;
 padding: 0;
 }
@@ -175,7 +177,7 @@ nav{
     display: block;
     text-align: center;
     font-style: normal;
-    color: black;
+    color: currentcolor;
     }
 }
 nav ul{
@@ -188,13 +190,13 @@ margin: 0 0 0.1em 0;
 a{
 font-style: italic;
 text-decoration: none;
-color: black;
+color: currentcolor;
 }
 a:hover{
-color: #aa0000;
+color: salmon;
 }
 a:active{
-color: #FFcccc;
+color: currentcolor;
 }
 p{
     margin-top:0px;
@@ -238,7 +240,7 @@ width:100%;
     }
     .left-box{
     align-self: center;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid currentcolor;
     width: 100%;
     margin: 0;
     padding-bottom:20px;
