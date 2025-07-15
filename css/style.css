@@ -226,6 +226,9 @@ img{
 width:100%;
 }
 @media(max-width: 600px) {
+    html(
+        font-size: 25px;
+    )
     main{
     flex-direction: column;
     }
