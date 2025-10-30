@@ -1,92 +1,6 @@
 :root {
     color-scheme: light dark;
 }
-@font-face {
-font-family: adelphe-trouble;
-src: url(Adelphe-Trouble-FlorealRegular.woff2);
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-font-family: adelphe-trouble;
-src: url(Adelphe-Trouble-FlorealItalic.woff2);
-font-weight: normal;
-font-style: italic;
-}
-@font-face {
-font-family: adelphe-trouble;
-src: url(Adelphe-Trouble-FlorealBold.woff2);
-font-weight: bold;
-font-style: normal;
-}
-@font-face {
-font-family: adelphe-trouble;
-src: url(Adelphe-Trouble-FlorealBoldItalic.woff2);
-font-weight: bold;
-font-style: italic;
-}
-.left-margin, .right-margin{
-    flex: 1 3 100px;
-}
-.left-box{
-display: flex;
-justify-content: flex-end;
-flex-direction: column;
-align-items: end;
-text-align: right;
-margin-right: 1.5em;
-flex: 1 1 20em;
-}
-.center-box{
-display: flex;
-flex-direction: column;
-max-width: 100%;
-flex: 1 0.5 30em;
-}
-.right-box{
-felx: 1 2 0px;
-}
-.headline {
-font-size: 65px;
-margin-bottom: 0px;
-}
-.subtitle {
-font-size: 35px;
-margin-top:10px;
-font-style: normal;
-line-height: 1.1;
-font-family: adelphe-trouble;
-text-wrap: balance;
-}
-.subheadline {
-font-size: 25px;
-font-style: normal;
-font-weight: normal;
-font-family: adelphe-trouble;
-}
-.wistful {
-font-family: adelphe-trouble;
-font-size: 20px;
-}
-.pixelated{
-image-rendering: pixelated;
-max-width: 200px;
-}
-.flavor-text{
-    hyphens: auto;
-    text-justify: inter-word;
-    text-indent: yes;
-}
-.flavor-text p{
-    margin: 0;
-    text-align: justify;
-}
-.flavor-text p + p{
-    text-indent: 1em;
-}
-.equal-columns{
-    flex: 1 1 15em;
-}
 html{
 box-sizing: border-box;
 max-width: 100%;
@@ -225,6 +139,94 @@ list-style-type: circle;
 img{
 width:100%;
 }
+
+@font-face {
+    font-family: adelphe-trouble;
+    src: url(Adelphe-Trouble-FlorealRegular.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: adelphe-trouble;
+    src: url(Adelphe-Trouble-FlorealItalic.woff2);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: adelphe-trouble;
+    src: url(Adelphe-Trouble-FlorealBold.woff2);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: adelphe-trouble;
+    src: url(Adelphe-Trouble-FlorealBoldItalic.woff2);
+    font-weight: bold;
+    font-style: italic;
+}
+.left-margin, .right-margin{
+    flex: 1 3 100px;
+}
+.left-box{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+    margin-right: 1.5em;
+    flex: 1 1 20em;
+}
+.center-box{
+    display: flex;
+    flex-direction: column;
+    max-width: 40em;
+    flex: 0.5 0.5 30em;
+}
+.right-box{
+    felx: 1 2 1em;
+}
+.headline {
+    font-size: 65px;
+    margin-bottom: 0px;
+}
+.subtitle {
+    font-size: 35px;
+    margin-top:10px;
+    font-style: normal;
+    line-height: 1.1;
+    font-family: adelphe-trouble;
+    text-wrap: balance;
+}
+.subheadline {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: adelphe-trouble;
+}
+.wistful {
+    font-family: adelphe-trouble;
+    font-size: 20px;
+}
+.pixelated{
+    image-rendering: pixelated;
+    max-width: 200px;
+}
+.flavor-text{
+    hyphens: auto;
+    text-justify: inter-word;
+    text-indent: yes;
+}
+.flavor-text p{
+    margin: 0;
+    text-align: justify;
+}
+.flavor-text p + p{
+    text-indent: 1em;
+}
+.equal-columns{
+    flex: 1 1 15em;
+}
+
 @media(max-width: 600px) {
     html{
         font-size: 21px;
