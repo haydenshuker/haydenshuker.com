@@ -1,0 +1,63 @@
+html{
+    font-family: charter, Cambria, serif;
+    font-size: 19.5px;
+    line-height: 1.45;
+    text-align: left;
+    display: inline;
+    position: static;
+    max-width: 100%;
+    margin: 0;
+    background: black;
+    color: white;
+}
+body{
+    max-width: 530px;
+    margin: auto;
+    padding: 0px 12px 0px 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    hyphens: auto;
+    text-justify: inter-word;
+    text-indent: yes;
+
+}
+p{
+    margin: 0;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+p + p{
+    text-indent: 1em;
+}
+h2, h3, h4, h5, h6{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    margin-bottom: 0px;
+}
+h1{
+    margin-top: 28px;
+    margin-bottom: 30px;
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+hr{
+    width: 100%;
+}
+a{
+    font-style: italic;
+    text-decoration: none;
+    color: pink;
+}
+a:hover{
+    color: #aadd99;
+}
+a:active{
+    color: #FFcccc;
+}
+p > a:after{
+    content: "°";
+}
