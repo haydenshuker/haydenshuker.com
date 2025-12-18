@@ -38,17 +38,17 @@ align-items: flex-start;
 }
 h1{
 margin-top: 20px;
-margin-bottom: 6px;
+margin-bottom: 0.5em;
 font-size: 35px;
 line-height: 1;
-font-family: adelphe-trouble;
+font-family: charter;
 }
 
 h2, h3, h4, h5, h6{
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: bold;
-    margin-top: 24px;
-    margin-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
     font-family: charter;
 }
 li{
@@ -70,7 +70,7 @@ display: block;
 height: 3px;
 border: 0;
 border-top: 1px solid currentcolor;
-border-bottom: 1px solid currentcolor;
+border-bottom: 0px solid currentcolor;
 margin: 1em 0.25em;
 padding: 0;
 }
@@ -85,17 +85,14 @@ padding: 0;
 nav{
 font-family: adelphe-trouble;
 display:block;
-li{
-float: left;
-padding-left: 0.5em;
-padding-right: 0.5em;
-}
-a{
-display: block;
-text-align: center;
-font-style: normal;
-color: currentcolor;
-}
+    li{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    }
+    a{
+    font-style: normal;
+    color: currentcolor;
+    }
 }
 nav ul{
 padding: 0;
@@ -104,6 +101,7 @@ list-style: none;
 nav li {
 margin: 0 0 0.1em 0;
 }
+
 a{
 font-style: italic;
 text-decoration: none;
@@ -173,7 +171,7 @@ font-weight: bold;
 font-style: italic;
 }
 .left-margin, .right-margin{
-flex: 1 3 100px;
+flex: 1 1 5em;
 }
 .left-box{
 display: flex;
@@ -182,21 +180,22 @@ flex-direction: column;
 align-items: end;
 text-align: right;
 margin-right: 1.5em;
-flex: 1 1 20em;
+flex: 1 1 30em;
 }
 .center-box{
 display: flex;
 flex-direction: column;
 max-width: 40em;
-margin-top: 1em;
 flex: 0.5 0.5 30em;
 }
 .right-box{
 felx: 1 2 1em;
 }
 .headline {
-font-size: 65px;
+font-size:3em;
+line-height: 1;
 margin-bottom: 0px;
+font-family: adelphe-trouble;
 }
 .subtitle {
 font-size: 35px;
@@ -207,10 +206,11 @@ font-family: adelphe-trouble;
 text-wrap: balance;
 }
 .subheadline {
-font-size: 25px;
+font-size: 1.4em;
 font-style: normal;
-font-weight: normal;
-font-family: adelphe-trouble;
+font-weight: bold;
+margin-top: 0em;
+font-family: charter;
 }
 .wistful {
 font-family: adelphe-trouble;
@@ -218,13 +218,21 @@ font-size: 20px;
 }
 .big-text {
 font-family: charter;
-font-weight: bold;
+font-weight: normal;
 font-size: 30px;
 }
 .pixelated{
 image-rendering: pixelated;
 max-width: 200px;
 }
+
+.prime-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .flavor-text{
 hyphens: auto;
 text-justify: inter-word;
