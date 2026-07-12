@@ -146,54 +146,6 @@ font-style: normal;
 section{
     margin-bottom: 3em;
 }
-@font-face {
-font-family: adelphe-trouble;
-src: url(Adelphe-Trouble-FlorealRegular.woff2);
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-font-family: adelphe-trouble;
-src: url(Adelphe-Trouble-FlorealItalic.woff2);
-font-weight: normal;
-font-style: italic;
-}
-@font-face {
-font-family: adelphe-trouble;
-src: url(Adelphe-Trouble-FlorealBold.woff2);
-font-weight: bold;
-font-style: normal;
-}
-@font-face {
-font-family: adelphe-trouble;
-src: url(Adelphe-Trouble-FlorealBoldItalic.woff2);
-font-weight: bold;
-font-style: italic;
-}
-@font-face {
-    font-family: bitstream-charter;
-    src: url(charter_regular.woff2);
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: bitstream-charter;
-    src: url(charter_bold.woff2);
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: bitstream-charter;
-    src: url(charter_italic.woff2);
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: bitstream-charter;
-    src: url(charter_bold_italic.woff2);
-    font-weight: bold;
-    font-style: italic;
-}
 .left-margin, .right-margin{
 flex: 1 1 5em;
 }
